@@ -1,0 +1,374 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Order | MOMO</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <meta charset="utf-8" />
+    <meta name="main" content="Our contacts." />
+    <meta name="our_team_members" content="Suim Park, Roman Shaiko, Dmitrii Kudrik, Larisa Sabalin" />
+    <meta name="description" content="Order page provides the possibility for website users to order custom cakes from the MOMO Dessert Café.">
+    <meta property="url" content="https://www.dessertcafemomo.com/" />
+    <meta property="site_name" content="Momo Dessert Cafe" />
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/gridReviews.css" />
+    <link rel="stylesheet" href="styles/bootstrap-social.css" />
+    <link rel="stylesheet" type="text/css" href="styles/sp_md.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="scripts/sp_momo.js"></script>
+    <script src="scripts/processLanguage.js"></script>
+
+</head>
+<body onload="setPicup();">
+    <nav id="nav" class="nav navbar navbar-fixed-top navbar-default">
+        <div class="container container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main_menu">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img id="nav_img" src="images/logo.png" alt="MOMO Logo"/>
+                </a>
+            </div>
+            <div class="navbar-collapse collapse main_menu">
+                <ul class="nav navbar-nav navbar-center lang-en main_menus">
+                    <li><a class="navFont" href="index.html">MOMO</a></li>
+                    <li><a class="navFont" href="menu.html">Menu</a></li>
+                    <li><a class="navFont" href="cakes.html">Cakes</a></li>
+                    <li><a class="navFont" href="events.html">Events</a></li>
+                    <li class="active"><a class="navFont" href="order.html">Order</a></li>
+                    <li><a class="navFont" href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-center lang-fr main_menus">
+                    <li><a class="navFont" href="index.html">MOMO</a></li>
+                    <li><a class="navFont" href="menu.html">Menu</a></li>
+                    <li><a class="navFont" href="cakes.html">Gâteaux</a></li>
+                    <li><a class="navFont" href="events.html">&#201;v&#233;nements</a></li>
+                    <li class="active"><a class="navFont" href="order.html">Commander</a></li>
+                    <li><a class="navFont" href="contact.html">Contacter</a></li>
+                </ul>
+                <button class="btn btn-sm btnLang" type="button" onclick="processCookie(this);">FR</button>
+            </div>
+        </div>
+    </nav>
+    <main id="sp_container">
+        <p class="lang-en breadcrumbMo">
+            <a href="index.html">MOMO</a>
+            >>
+            <a href="order.html">Order</a>
+        </p>
+        <p class="breadcrumbMo lang-fr">
+            <a href="index.html">MOMO</a>
+            >>
+            <a href="order.html">Commander</a>
+        </p>
+        <br />
+        <h1 class="faqNorder_title text-center order_title lang-en">ORDER</h1>
+        <h1 class="faqNorder_title text-center order_title lang-fr">COMMANDER</h1><br />
+        <hr class="hr_title" />
+        <p class="sp_message lang-en">If you have any questions, call &nbsp;&nbsp;<i class="fa fa-mobile fa-md" aria-hidden="true">&nbsp;&nbsp;514-567-5099</i>.<br />If you need the detail, see the <a href="contact.html">Contact</a> page.</p><br />
+        <p class="sp_message lang-fr">Si vous avez des questions, appelez &nbsp;&nbsp;<i class="fa fa-mobile fa-md" aria-hidden="true">&nbsp;&nbsp;514-567-5099</i>.<br />Si vous avez besoin des details, consultez la page <a href="contact.html">Contacter</a> page.</p><br />
+
+        <p class="form_title sp_message sp_message_bold lang-en">Please fill in the form below to order your custom cakes.</p>
+        <p class="form_title sp_message sp_message_bold lang-fr">S'il vous plaît remplissez le formulaire ci-dessous pour commander vos gâteaux personnalisés.</p>
+
+        <div id="order_table">
+            <form class="thisForm lang-en order" name="order"
+                    method="post" action="#order_info" autocomplete="on">
+                <div class="form-group row">
+                    <div class="col-xs-6">
+                        <label>Name</label>
+                        <input type="text" name="your_name" class="form-control form-control-sm" maxlength="40" autofocus="autofocus" />
+                    </div>
+                    <div class="col-xs-6">
+                        <label>E-mail</label>
+                        <input type="email" name="email" class="form-control form-control-sm" placeholder=" id@domain.com" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-xs-6">
+                        <label>Address</label>
+                        <input type="text" name="address" class="form-control form-control-sm" />
+                    </div>
+                    <div class="col-xs-6">
+                        <label>Phone</label>
+                        <input type="text" name="ph_number"  class="form-control form-control-sm" placeholder=" 0123456789" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-xs-6">
+                       <label>Category</label>
+                       <select class="form-control form-control-sm" name="cakeCat" onchange="select_cake_category()">
+                            <option>Wedding cakes</option>
+                            <option>Birthday cakes</option>
+                            <option>Korea Style cakes</option>
+                            <option>Flower cakes</option>
+                            <option>Custom cakes</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-6">
+                        <label>Cake No.</label>
+                        <select class="form-control form-control-sm" name="cakeID">
+                            <option>Wedding Cake No. 1</option>
+                            <option>Wedding Cake No. 2</option>
+                            <option>Wedding Cake No. 3</option>
+                            <option>Wedding Cake No. 4</option>
+                            <option>Wedding Cake No. 5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-xs-6">
+                        <label>Pickup date</label>
+                        <input type="date" name="pickupDate" class="form-control" onchange="validateDate();" />
+                    </div>
+                    <div class="col-xs-6">
+                        <label>Time</label>
+                        <select class="form-control form-control-sm" name="pickupTime">
+                            <option>1PM to 3PM</option>
+                            <option>3PM to 5PM</option>
+                            <option>5PM to 8PM</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-xs-12">
+                        <label>Attach your image for the custom cake.</label>
+                        <input type="file" class="form-control-file" name="productPhoto" onchange="validateImgFile();" disabled="disabled" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-xs-12">
+                        <label>Message</label>
+                        <textarea name="your_text" class="form-control" rows="7" cols="46" required="required"></textarea>
+                    </div>
+                </div>
+                <small class="form-text text-muted">We'll never share your personal information with anyone else.</small><br />
+
+
+                <div class="form-group row">
+                        <button name="submit_form" class="btn btn-default btn-sm" type="button" onclick="validateForm();">Order</button>
+                        <input type="reset" class="btn btn-default btn-sm" value="Clear"
+                               name="clear_form" />
+                </div>
+            </form>
+            <form class="thisForm lang-fr order" name="order"
+                  method="post" action="#order_info" autocomplete="on">
+                <div class="form-group row">
+                    <div class="col-xs-6">
+                        <label>Nom</label>
+                        <input type="text" name="your_name" class="form-control form-control-sm" maxlength="40" />
+                    </div>
+                    <div class="col-xs-6">
+                        <label>E-mail</label>
+                        <input type="email" name="email" class="form-control form-control-sm" placeholder=" id@domain.com" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-xs-6">
+                        <label>Address</label>
+                        <input type="text" name="address" class="form-control form-control-sm" />
+                    </div>
+                    <div class="col-xs-6">
+                        <label>Téléphone</label>
+                        <input type="text" name="ph_number" class="form-control form-control-sm" placeholder=" 0123456789" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-xs-6">
+                        <label>Catégorie</label>
+                        <select class="form-control form-control-sm" name="cakeCat" onchange="select_cake_category()">
+                            <option>Gâteaux de mariage</option>
+                            <option>Gâteaux d'anniversaire</option>
+                            <option>Gâteaux de style Coréen</option>
+                            <option>Gâteaux aux fleurs</option>
+                            <option>Gâteaux personnalisés</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-6">
+                        <label>Cake No.</label>
+                        <select class="form-control form-control-sm" name="cakeID">
+                            <option>Gâteau de mariage No. 1</option>
+                            <option>Gâteau de mariage No. 2</option>
+                            <option>Gâteau de mariage No. 3</option>
+                            <option>Gâteau de mariage No. 4</option>
+                            <option>Gâteau de mariage No. 5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-xs-6">
+                        <label>Date de ramassage</label>
+                        <input type="date" name="pickupDate" class="form-control" onchange="validateDate();" />
+                    </div>
+                    <div class="col-xs-6">
+                        <label>Heure</label>
+                        <select class="form-control form-control-sm" name="pickupTime">
+                            <option>1PM to 3PM</option>
+                            <option>3PM to 5PM</option>
+                            <option>5PM to 8PM</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-xs-12">
+                        <label>Joignez votre image pour le gâteau personnalisé.</label>
+                        <input type="file" class="form-control-file" name="productPhoto" onchange="validateImgFile();" disabled="disabled" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-xs-12">
+                        <label>Message</label>
+                        <textarea name="your_text" class="form-control" rows="7" cols="46" required="required"></textarea>
+                    </div>
+                </div>
+                <small class="form-text text-muted">Nous ne partagerons jamais votre infomration personelle avec quelqu'un d'autre.</small><br />
+
+
+                <div class="form-group row">
+                    <button name="submit_form" class="btn btn-default btn-sm" type="button" onclick="validateForm();">Commande</button>
+                    <input type="reset" class="btn btn-default btn-sm" value="Clair"
+                           name="clear_form" />
+                </div>
+            </form>
+
+        </div>
+        <div id="order_info">
+            <table class="order_info_t  lang-en">
+                <tr>
+                    <td id="name_l" class="name_l">Name</td>
+                    <td id="name_v" class="name_v"></td>
+                </tr>
+                <tr>
+                    <td id="mail_l" class="mail_l">E-mail</td>
+                    <td id="mail_v" class="mail_v"></td>
+                </tr>
+                <tr>
+                    <td id="address_1" class="address_1">Address</td>
+                    <td id="address_v" class="address_v"></td>
+                </tr>
+                <tr>
+                    <td id="phone_l" class="phone_l">Phone Number</td>
+                    <td id="phone_v" class="phone_v"></td>
+                </tr>
+                <tr>
+                    <td id="cake_l" class="cake_l">Selected Cake</td>
+                    <td id="cake_v" class="cake_v"></td>
+                </tr>
+                <tr>
+                    <td id="date_l" class="date_l">Pickup Date & Time</td>
+                    <td id="date_v" class="date_v"></td>
+                </tr>
+                <tr>
+                    <td id="message_l" class="message_l">Message</td>
+                    <td id="message_v" class="message_v"></td>
+                </tr>
+            </table>
+            <table class="order_info_t   lang-fr">
+                <tr>
+                    <td class="name_l">Nom</td>
+                    <td class="name_v"></td>
+                </tr>
+                <tr>
+                    <td class="mail_l">E-mail</td>
+                    <td class="mail_v"></td>
+                </tr>
+                <tr>
+                    <td class="address_1">Address</td>
+                    <td class="address_v"></td>
+                </tr>
+                <tr>
+                    <td class="phone_l">Numéro de téléphone</td>
+                    <td class="phone_v"></td>
+                </tr>
+                <tr>
+                    <td class="cake_l">Gâteau sélectionné</td>
+                    <td class="cake_v"></td>
+                </tr>
+                <tr>
+                    <td class="date_l">Date et heure de ramassage</td>
+                    <td class="date_v"></td>
+                </tr>
+                <tr>
+                    <td  class="message_l">Message</td>
+                    <td class="message_v"></td>
+                </tr>
+            </table>
+            <br /><br /><br />
+        </div>
+
+    </main>
+    <br/> <br/> <br /> <br /> <br /> <br />
+    <footer class="nav navbar navbar-bottom navbar-inverse">
+        <div class="container container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#footer-menu">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="footer-menu" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-left lang-en">
+                    <li><a href="index.html">MOMO</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="reviewUs.html">Review Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-left lang-fr">
+                    <li><a href="index.html">MOMO</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="reviewUs.html">Commenter-Nous</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+            <div id="footer-others">
+                <p class="footer_info navbar-text lang-en">
+                    Monday – Thursday : 10am ~ 9pm<br />
+                    Friday - Saturday : 10am ~ 10pm<br />
+                    Sunday : 10am ~ 8pm<br /><br />
+                    5525 Ave. Monkland,Montreal, QC H4A 1C7
+                </p>
+                <p class="footer_info navbar-text lang-fr">
+                    Lundi &#224; Jeudi : 10 to 21<br />
+                    Vendredi - Samedi : 10 to 22<br />
+                    Dimanche : 10 to 20<br /><br />
+                    5525 Av de Monkland, Montr&#232;al, QC H4A 1C7
+                </p>
+                <div id="footer-sn" class="navbar-right">
+                    <button class="btn btn-social-icon btn-facebook btn-sm" type="button" onclick="move_sn('facebook')"><span class="fa fa-facebook"></span></button>
+                    <button class="btn btn-social-icon btn-instagram btn-sm" type="button" onclick="move_sn('instagram')"><span class="fa fa-instagram"></span></button>
+                    <button id="kakao" class="btn btn-social-icon btn-kakao btn-sm" type="button" onmouseover="kakaoTalk_down()" onmouseout="kakaoTalk_up()"><span class="fa fa-kakao"></span></button>
+                    <span id="tooltiptext">id:emilypark3</span>
+                    <p class="lastupdated lang-en">Last updated on 2017-12-18</p>
+                    <p class="lastupdated lang-fr">Dernière mise à jour le 2017-12-18</p>
+                </div>
+                <form class="navbar-form navbar-right" target="_blank">
+                    <div class="input-group">
+                        <input type="text" id="keyword" class="form-control" placeholder="Search" name="search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="button" onclick="google_search()">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </footer>
+    <div id="copyrights">
+        <p class="footer_copy lang-en"> 2016-2017 All Rights Reserved. MOMO Dessert Café.&nbsp;&nbsp;<br />Developed & Designed by Suim Park, Roman Shaiko, Dmitrii Kudrik, Larisa Sabalin&nbsp;&nbsp;</p>
+        <p class="footer_copy lang-fr"> 2016-2017 Tous Droits Réservés. MOMO Dessert Café.&nbsp;&nbsp;<br />Développé et conçu par Suim Park, Roman Shaiko, Dmitrii Kudrik, Larisa Sabalin&nbsp;&nbsp;</p>
+    </div>
+    <script src="scripts/order.js"></script>
+</body>
+</html>

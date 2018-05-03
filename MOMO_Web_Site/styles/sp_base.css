@@ -1,0 +1,382 @@
+﻿@charset "utf-8";
+/*CSS document for Dessert Cafe MOMO, */
+/*Developed by Roman Shaiko, Suim Park, Dmitrii Kudrik, Larisa Sabalin*/
+/*Script date: December 13, 2017*/
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none;
+    }
+
+    #review p {
+        font-size: 18px;
+    }
+
+    main {
+        font-family: 'ABeeZee', sans-serif;
+        width:95%;
+    }
+        main p {
+            font-size: 14px;
+        }
+
+}
+
+@media (max-width: 780px) {
+    #review p {
+        font-size: 18px;
+    }
+    main {
+        font-family: 'ABeeZee', sans-serif;
+        font-size: 12px;
+        width:95%;
+    }
+        main p {
+            font-size: 15px;
+        }
+}
+
+@media (min-width:992px) {
+    #sp_container {
+        width: 960px;
+    }
+
+    #map {
+        width: 700px;
+        height: 400px;
+        background-color: white;
+    }
+
+}
+
+@media (min-width:576px) and (max-width:991px) {
+    #sp_container {
+        width: 95%;
+    }
+
+    #map {
+        width: 450px;
+        height: 300px;
+        background-color: white;
+    }
+}
+
+@media (max-width:575px) {
+    #sp_container {
+        width: 95%;
+    }
+
+    #map {
+        width: 400px;
+        height: 300px;
+        background-color: white;
+    }
+}
+
+main {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 13px;
+}
+
+
+#sp_container {
+    margin: auto;
+    margin-top:110px;
+}
+
+
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+    min-height: 200px;
+    opacity: 0.9;
+    filter: alpha(opacity=50);
+}
+
+.green_title {
+    font-family: 'Edwardian Script ITC';
+    color: rgb(14,61,108); /* #6c8620;*/
+    font-weight: bold;
+    font-size: 4em;
+}
+
+.berlin_font_title {
+    font-family: 'Berlin Sans FB';
+    font-weight: 200;
+    color: rgba(20,14,13, 2);
+    font-size:2em;
+}
+
+.carousel_title {
+    font-family: 'Berlin Sans FB';
+    font-weight: 200;
+    color: white;
+    font-size: 2em;
+}
+
+.carousel_font_sub_text_white {
+    font-family: 'Berlin Sans FB';
+    color:white;
+    font-size: 15px;
+}
+
+.carousel_font_sub_text {
+    font-family: 'Berlin Sans FB';
+    color: rgba(67,48,42, 2) !important;
+    font-size: 15px;
+}
+
+#myCarousel a:link, #myCarousel a:hover {
+    text-decoration: none;
+}
+
+
+/*
+.background {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+*/
+#myCarousel p {
+    color:white;
+}
+
+.hr_title{
+    border:1px solid lightgray;
+    width:200px;
+}
+
+#footer-menu a button {
+    color: rgba(37,51,69,2);
+}
+
+
+.center {
+    text-align: center;
+    margin: auto;
+    width: auto;
+}
+
+@media (max-width: 1000px) {
+    .berlin_font_title {
+        font-family: 'Berlin Sans FB';
+        font-weight: 200;
+        color: rgba(20,14,13, 2);
+        font-size: 20px;
+    }
+
+    .carousel_font_sub_text {
+        font-family: 'Berlin Sans FB';
+        color: rgba(67,48,42, 2) !important;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 800px) {
+    .berlin_font_title {
+        font-family: 'Berlin Sans FB';
+        font-weight: 200;
+        color: rgba(20,14,13, 2);
+        font-size: 18px;
+    }
+
+    .green_title {
+        font-size: 3em;
+    }
+
+    .carousel_font_sub_text {
+        font-family: 'Berlin Sans FB';
+        color: rgba(67,48,42, 2) !important;
+        font-size: 10px;
+    }
+}
+
+#review {
+    margin: auto;
+}
+
+    #review p {
+        padding: 10px 20px;
+        ;
+        margin: auto;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: rgba(67,48,42, 2) !important;
+        font-size: 15px;
+    }
+
+
+#map {
+    margin: auto;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+}
+
+#img_kakaoid {
+    width: 26px;
+    height: 26px;
+}
+
+/* for faq and order*/
+
+#sp_container {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 960px;
+    margin-top: 130px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.faqNorder_title {
+    font-family:'Berlin Sans FB';
+    color: rgb(14,61,108);
+    font-size: 3em;
+    padding-bottom: 30px;
+}
+
+.question {
+    color: goldenrod;
+    font-weight: bold;
+    font-size: 3em !important;
+}
+
+
+.q_contents {
+    font-size: 1.5em !important;
+    font-weight: bold;
+}
+
+.answer {
+    color: rgb(14,61,108);
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+.faq table {
+    margin-left: 0;
+}
+
+    .faq table td {
+        vertical-align: top;
+        font-size: 1.3em !important;
+        font-weight: normal;
+    }
+
+@media (max-width:767px) {
+    .question {
+        color: goldenrod;
+        font-weight: bold;
+        font-size: 2em !important;
+    }
+
+
+    .q_contents {
+        font-size: 18px !important;
+        font-weight: bold;
+    }
+
+    .answer {
+        color: rgb(14,61,108);
+        font-size: 2em !important;
+        font-weight: bold;
+        margin-left: 40px;
+    }
+
+    .faq table td {
+        vertical-align: top;
+        font-size: 16px !important;
+        font-weight: normal;
+    }
+}
+
+@media (max-width:575px) {
+    .question {
+        color: goldenrod;
+        font-weight: bold;
+        font-size: 1.5em !important;
+    }
+
+
+    .q_contents {
+        font-size: 16px !important;
+        font-weight: bold;
+    }
+
+    .answer {
+        color: rgb(14,61,108);
+        font-size: 1.5em !important;
+        font-weight: bold;
+        margin-left: 40px;
+    }
+
+    .faq table td {
+        vertical-align: top;
+        font-size: 14px !important;
+        font-weight: normal;
+    }
+}
+
+.sp_message {
+    text-align: center;
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.sp_message_bold {
+    font-size:18px;
+    font-weight: bold;
+}
+
+.sp_message a {
+    color:darkgoldenrod;
+}
+
+#order_table, #event_table {
+    width: 400px;
+    border: 5px solid goldenrod;
+    border-radius: 10px;
+    padding: 0 30px;
+    margin: auto;
+}
+
+.contactinfo {
+    padding:30px;
+}
+
+#order_table label {
+    margin-top:10px;
+    font-size:16px;
+    font-weight:normal;
+}
+
+#order_table .btn, #event_table btn {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 70px;
+}
+
+.sp_radio{
+    width:340px;
+}
+
+#order_info {
+    margin:auto;
+    width: 400px;
+    border: 5px solid goldenrod;
+    border-radius: 10px;
+    display:none;
+    padding:20px;
+}
+
+#order_info table{
+    width:100%;
+}
+
+#order_info_t tr {
+    border-bottom : 1px solid darkgoldenrod;
+}
+#order_info_t td{
+    padding:15px;
+}
+

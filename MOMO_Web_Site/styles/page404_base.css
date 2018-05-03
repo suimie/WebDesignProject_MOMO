@@ -1,0 +1,14 @@
+@charset "utf-8";
+/*CSS document for Dessert Cafe MOMO, */
+/*Developed by Roman Shaiko, Suim Park, Dmitrii Kudrik, Larisa Sabalin*/
+/*Script date: December 13, 2017*/
+
+/*.background{
+  background-color: rgba(255,148,218,0.2)
+}*/
+
+.baseImg{
+  margin: 0 auto;
+  width: 95%;
+
+}

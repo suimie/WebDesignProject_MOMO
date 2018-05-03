@@ -1,0 +1,155 @@
+﻿@charset "utf-8";
+/*CSS document for Dessert Cafe MOMO, */
+/*Developed by Roman Shaiko, Suim Park, Dmitrii Kudrik, Larisa Sabalin*/
+/*Script date: December 13, 2017*/
+
+.space_before{
+padding-top: 90px;
+}
+.space_before_50{
+  padding-top: 50px;
+}
+.screen_height_img{
+  max-height: 607px;
+}
+
+.gridImgAbout{
+  max-width: 100%;
+}
+.item1About{
+  margin: 10px;
+  padding: 8px;
+
+
+  grid-area:textFact;
+  grid-column: 1 / span 2;
+    grid-row: 1 / 2;
+}
+.item2About{
+  margin: 15px;
+  padding: 8px;
+
+
+  grid-area:textFact;
+  grid-column: 3 / span 2;
+    grid-row: 1 / 2;
+}
+.item3About{
+  margin-top: 15px;
+  padding: 8px;
+
+
+  grid-area:textFact;
+  grid-column: 1 / span 2;
+    grid-row: 6 / 7;
+}
+.item4About{
+
+  padding: 8px;
+
+  grid-area:textFact;
+  grid-column: 3 / span 2;
+    grid-row: 6 / 7;
+}
+.itemImg1About{
+  border-radius: 15px;
+   box-shadow: 4px 4px 4px rgb(180,180,180);
+  grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+}
+.itemImg2About{
+  border-radius: 15px;
+   box-shadow: 4px 4px 4px rgb(180,180,180);
+  grid-column: 3 / span 2;
+    grid-row: 2 / span 2;
+}
+.itemImg3About{
+  border-radius: 15px;
+   box-shadow: 4px 4px 4px rgb(180,180,180);
+  grid-column: 1 / span 2;
+    grid-row: 4 / span 2;
+}
+.itemImg4About{
+  border-radius: 15px;
+   box-shadow: 4px 4px 4px rgb(180,180,180);
+
+  grid-column: 3 / span 2;
+    grid-row: 4 / span 2;
+}
+.large{
+  font-size:18px!important;
+}
+.small{
+  font-size:12px!important;
+}
+.middle{
+  font-size:14px!important  ;
+}
+.pink{
+  color:#ECA4A6;
+}
+.white{
+  color: #ffffff!important;
+}
+.green{
+  color:#5fc35c!important;
+}
+.grey{
+  color: #807F89!important;
+}
+.italic{
+  font-style: italic!important;
+}
+.brown{
+  color: #854522;
+}
+.fontBlack{
+  color: #000000;
+}
+.borderRed{
+  border: medium ridge red;
+}
+.borderFushia{
+  border: medium ridge #fd287e;
+}
+.borderGreen{
+  border: medium ridge #246703;
+}
+.borderPink{
+  border: medium ridge #ECA4A6;
+}
+.borderBlue{
+  border: medium ridge #0d00ff;
+}
+.borderViolet{
+  border: medium ridge #9100ff;
+}
+
+
+
+/* colors:
+pink
+#ff94da	(255,148,218)
+fushia
+#fd287e	(253,40,126)
+brown
+#854522	(133,69,34)
+green
+#246703	(36,103,3)
+light green
+#5fc35c	(95,195,92)
+
+COLOR CODES
+light pink
+#F9D5D3
+pink
+#ECA4A6
+grey
+#807F89
+green
+#99A89E
+faded green
+#BBC7BA
+light grey
+#D7DBD1
+*/

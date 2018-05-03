@@ -1,0 +1,136 @@
+﻿@charset "utf-8";
+/*CSS document for Dessert Cafe MOMO, */
+/*Developed by Roman Shaiko, Suim Park, Dmitrii Kudrik, Larisa Sabalin*/
+/*Script date: December 13, 2017*/
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none;
+    }
+
+    #review p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 780px) {
+    #review p {
+        font-size: 18px;
+    }
+}
+
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+    min-height: 200px;
+    opacity: 0.9;
+    filter: alpha(opacity=50);
+}
+
+.green_title {
+    font-family: 'Edwardian Script ITC';
+    color: #6c8620;
+    font-weight: bold;
+    font-size:4em;
+}
+
+.berlin_font_title {
+    font-family: 'Berlin Sans FB';
+    font-weight: 200;
+    color: rgba(20,14,13, 2);
+    font-size:2em;
+}
+
+.carousel_title {
+    font-family: 'Berlin Sans FB';
+    font-weight: 200;
+    color: white;
+    font-size: 2em;
+}
+
+.carousel_font_sub_text_white {
+    font-family: 'Berlin Sans FB';
+    color:white;
+    font-size: 15px;
+}
+
+.carousel_font_sub_text {
+    font-family: 'Berlin Sans FB';
+    color: rgba(67,48,42, 2) !important;
+    font-size: 15px;
+}
+
+#myCarousel a:link, #myCarousel a:hover {
+    text-decoration: none;
+}
+
+
+/*
+.background {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+*/
+#myCarousel p {
+    color:white;
+}
+
+.hr_title{
+    border:1px solid lightgray;
+    width:200px;
+}
+
+#footer-menu a button {
+    color: rgba(37,51,69,2);
+}
+
+
+.center {
+    text-align: center;
+    margin: 0:auto;
+    width: auto;
+}
+
+@media (max-width: 1000px) {
+    .berlin_font_title {
+        font-family: 'Berlin Sans FB';
+        font-weight: 200;
+        color: rgba(20,14,13, 2);
+        font-size: 20px;
+    }
+
+    .carousel_font_sub_text {
+        font-family: 'Berlin Sans FB';
+        color: rgba(67,48,42, 2) !important;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 800px) {
+    .berlin_font_title {
+        font-family: 'Berlin Sans FB';
+        font-weight: 200;
+        color: rgba(20,14,13, 2);
+        font-size: 18px;
+    }
+
+    .carousel_font_sub_text {
+        font-family: 'Berlin Sans FB';
+        color: rgba(67,48,42, 2) !important;
+        font-size: 10px;
+    }
+}
+
+#review {
+    margin:auto;
+}
+
+    #review p {
+        padding: 10px 20px;
+        ;
+        margin: auto;
+        font-family: 'Berlin Sans FB';
+        color: rgba(67,48,42, 2) !important;
+        font-size: 15px;
+    }

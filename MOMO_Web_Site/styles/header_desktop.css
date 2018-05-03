@@ -1,0 +1,35 @@
+﻿@charset "utf-8";
+/*CSS document for Dessert Cafe MOMO, */
+/*Developed by Roman Shaiko, Suim Park, Dmitrii Kudrik, Larisa Sabalin*/
+/*Script date: December 13, 2017*/
+
+.nav .container{
+    width:960px;
+}
+
+#sp_container {
+    width: 960px;
+}
+
+.main_menus > li > a {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.navbar-toggle {
+    padding: 10px;
+    margin: 25px 15px 25px 0;
+}
+
+#nav_img {
+    width:70px;
+    height:70px;
+}
+
+.navFont {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize !important;
+    color: rgba(45,70,60, 2);
+}

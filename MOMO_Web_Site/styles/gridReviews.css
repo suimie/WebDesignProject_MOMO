@@ -1,0 +1,172 @@
+@charset "utf-8";
+/*CSS document for Dessert Cafe MOMO, */
+/*Developed by Roman Shaiko, Suim Park, Dmitrii Kudrik, Larisa Sabalin*/
+/*Script date: December 13, 2017*/
+
+.title{
+  padding-bottom: 90px;
+}
+.grid-containerIndex{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 22% 22% 22% 22% ;
+  grid-template-rows: 100px 100px;
+  grid-template-areas:
+  "reviewImg reviewImg reviewImg reviewImg"
+  "reviewTxt reviewTxt reviewTxt reviewTxt ";
+  grid-column-gap:15px;
+  grid-row-gap: 15px;
+
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.gridImg{
+  border-radius: 20%;
+  max-height: 180px;
+}
+.itemBack1{
+  background: #D7DBD1;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.itemBack2{
+  background-color: #D7DBD1;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.itemBack3{
+  background-color: #D7DBD1;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.itemBack4{
+  background-color: #D7DBD1;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.item1{
+
+
+    grid-area:reviewImg;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  /*  align-items: end;*/
+}
+.itemImg1{
+
+
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.itemImg2{
+
+
+
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.itemImg3{
+
+  
+
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.item2{
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: span 3;
+  /*align-items: center;*/
+
+}
+.item3{
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: span 3;
+}
+.item4{
+
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: span 3;
+}
+.item5{
+
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: span 3;
+}
+
+.rev_content{
+    width:90%;
+    margin:auto;
+}
+.rev_text {
+    padding-left: 50px;
+    padding-right:50px;
+}
+.rev_photo {
+    width: 35%;
+    float:right;
+    margin: 0 30px 30px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px rgb(180,180,180);
+    border:3px solid rgb(229, 68, 73);
+}
+.rev_pic{
+    clear:both;
+    margin:40px auto;
+    width:95%;
+}
+.rev_pic a img{
+    text-align:center;
+    width:14%;
+}
+
+.rev_pic a img:hover {
+    opacity:0.7;
+}
+
+@media (max-width: 600px) {
+    .rev_content {
+        min-width: 420px;
+        margin: auto;
+    }
+
+    .rev_text {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .rev_photo {
+        width: 45%;
+        float: right;
+        margin: 10px 0 30px 15px;
+        border-radius: 15px;
+        box-shadow: 4px 4px 4px rgb(180,180,180);
+    }
+}

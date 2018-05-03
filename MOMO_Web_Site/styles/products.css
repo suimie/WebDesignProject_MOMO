@@ -1,0 +1,116 @@
+﻿@charset "utf-8";
+/*CSS document for Dessert Cafe MOMO, */
+/*Developed by Roman Shaiko, Suim Park, Dmitrii Kudrik, Larisa Sabalin*/
+/*Script date: December 13, 2017*/
+
+@import url("products_desktop.css") only screen and (min-width:880px);
+@import url("products_tablet.css") only screen and (min-width:665px) and (max-width:879px);
+@import url("products_phone.css") only screen and (max-width:664px);
+
+/*Wrapper MAIN*/
+#wrap_products {
+    margin: 0 auto;
+    margin-top: 130px;
+    text-align: center;
+}
+
+#breadcrumb {
+    text-align:left;
+    margin-left:50px;
+    font-size:small;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.products_title {
+    color: rgb(14, 61, 108);
+    font-family: 'Berlin Sans FB';
+}
+
+.momo_title_h1 {
+    color: rgb(14, 61, 108);
+    font-family: 'Berlin Sans FB';
+    text-align:center;
+}
+.momo_title_h2 {
+    color: rgb(14, 61, 108);
+    font-family: 'Berlin Sans FB';
+    text-align:center;
+    font-weight:400;
+}
+
+
+
+/*Styling menu and buttons*/
+.horisontal_menu {
+    margin: auto;
+    border-bottom: 1px dotted brown;
+}
+
+.show_more {
+    margin:auto;
+    border-bottom: 1px dotted brown;
+    font-family: 'Berlin Sans FB';
+    display:none;
+}
+
+
+/*Styling buttons*/
+main button {
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    font-family: 'Berlin Sans FB';
+    color: chocolate;
+}
+
+    main button:hover {
+        background-color: gainsboro;
+    }
+
+/*Special styling for Ghrome*/
+*:focus {
+    outline: 0 !important;
+}
+
+/*Gallery Styling*/
+#gallery_products img {
+    width: 200px;
+    border-radius: 15px;
+    margin: 8px;
+    box-shadow: 4px 4px 4px rgb(180,180,180);
+}
+.review_img div img{
+ border-radius: 15px;
+ box-shadow: 4px 4px 4px rgb(180,180,180);
+}
+
+#gallery_products a:nth-child(even) img:hover {
+    margin: 0 8px;
+    border: 3px solid #0d00ff;
+}
+
+#gallery_products a:nth-child(2n+1) img:hover {
+    margin: 0 8px;
+    border: 3px solid #246703;
+}
+
+#gallery_products a:nth-child(3n+1) img:hover {
+    margin: 0 8px 0 8px;
+    border: 3px solid #9100ff;
+}
+
+.fancybox-custom .fancybox-skin {
+    box-shadow: 0 0 50px #222;
+}
+
+/*Go to Top button*/
+.go-top {
+    width: 150px;
+    margin: auto 30px auto auto;
+    font-size:small;
+    text-align:right;
+}
+    .go-top img {
+        width: 30px;
+    }

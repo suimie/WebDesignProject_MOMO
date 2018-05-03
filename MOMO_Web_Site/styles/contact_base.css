@@ -1,0 +1,53 @@
+﻿@charset "utf-8";
+/*CSS document for Dessert Cafe MOMO, */
+/*Developed by Roman Shaiko, Suim Park, Dmitrii Kudrik, Larisa Sabalin*/
+/*Script date: December 13, 2017*/
+
+@media (min-width:992px) {
+    #contact_container {
+        width: 992px;
+    }
+
+    #map {
+        width:700px;
+        height:400px;
+        background-color:white;
+    }
+}
+
+@media (min-width:576px) and (max-width:991px) {
+    #contact_container {
+        width: 95%;
+    }
+    #map {
+        width: 450px;
+        height: 300px;
+        background-color: white;
+    }
+}
+
+@media (max-width:575px) {
+    #contact_container {
+        width: 100%;
+    }
+    #map {
+        width: 400px;
+        height: 300px;
+        background-color: white;
+    }
+}
+
+#contact_container{
+    margin:auto;
+}
+
+#map {
+    margin :auto;
+    border:2px solid lightgray;
+    border-radius:10px;
+}
+
+#img_kakaoid {
+    width:26px;
+    height:26px;
+}

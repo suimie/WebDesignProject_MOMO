@@ -1,0 +1,54 @@
+@charset "utf-8";
+/*CSS document for Dessert Cafe MOMO, */
+/*Developed by Roman Shaiko, Suim Park, Dmitrii Kudrik, Larisa Sabalin*/
+/*Script date: December 13, 2017*/
+
+main{
+width: 720px;
+}
+.mainSize{
+  max-width: 720px;
+    margin: 0 auto;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.grid-containerEvents{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 20% [col-start]);
+  grid-template-rows: 170px repeat(2, 20% [row-start]) 200px repeat(2, 20% [row-start]);
+  grid-template-areas:
+
+  "textFact textFact textFact textFact"
+  "imageFact imageFact imageFact imageFact"
+  "imageFact imageFact imageFact imageFact"
+  "textFact textFact textFact textFact"
+  "imageFact imageFact imageFact imageFact"
+  "imageFact imageFact imageFact imageFact";
+  grid-column-gap:15px;
+  grid-row-gap: 15px;
+
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.grid-containerAbout{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 20% [col-start]);
+  grid-template-rows: 170px repeat(4, 20% [row-start]) 250px;
+  grid-template-areas:
+
+  "textFact textFact textFact textFact"
+  "imageFact imageFact imageFact imageFact"
+  "imageFact imageFact imageFact imageFact"
+  "imageFact imageFact imageFact imageFact"
+  "imageFact imageFact imageFact imageFact"
+  "textFact textFact textFact textFact";
+  grid-column-gap:15px;
+  grid-row-gap: 15px;
+
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
